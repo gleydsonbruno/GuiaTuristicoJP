@@ -1,25 +1,12 @@
-let info_1 = document.getElementById("add-packet-form");
-let info_2 = document.getElementById("nothing");
-let info_3 = document.getElementById("access-packet-info");
+var listaDeFrases = [
+    "Viajar é colecionar mundos dentro de si.",
+    "O destino muda, mas a aventura é sempre a mesma: viver intensamente.",
+    "Onde os pés não alcançam, o coração sonha.",
+    "Descubra lugares, encontre histórias, viva memórias.",
+    "Viajar é a forma mais bonita de se perder — e de se encontrar."
+]
 
-function add_packet() {
-    info_1.style.display = "block";
-    info_2.style.display = "none";
-    info_3.style.display = "none";
-};
+frase_indice = Math.floor(Math.random() * listaDeFrases.length);
+frase = document.getElementById("phrase");
 
-function access_packet() {
-    info_1.style.display = "none";
-    info_2.style.display = "none";
-    info_3.style.display = "block";
-}
-
-document.getElementById("add-packet").addEventListener("click", add_packet);
-
-
-document.querySelectorAll(".access-packet-btn").forEach(btn => {
-    btn.addEventListener("click", () => {
-        document.getElementById("packetIdInput").value = btn.dataset.id;
-        document.getElementById("showPacketForm").submit();
-    });
-});
+frase.textContent = listaDeFrases[frase_indice];

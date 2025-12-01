@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gastronomia - João Pessoa, PB</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'jampa-blue': '#1e40af',
+                        'jampa-green': '#10b981',
+                        'jampa-sand': '#f5f5dc',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #f7f7f7;
+        }
+        .main-content-area {
+            background-color: #ffffff;
+        }
+        .hero-banner {
+            background: linear-gradient(135deg, #1e40af 0%, #10b981 100%);
+        }
+        .sticky-nav {
+            z-index: 50;
+        }
+    </style>
+</head>
+<body class="font-sans">
+
+    <nav class="sticky top-0 bg-white border-b border-gray-200 shadow-md py-3 sticky-nav">
+        <div class="container mx-auto px-4 max-w-7xl flex justify-between items-center">
+            <a href="painel.php" class="text-2xl font-black text-jampa-blue hover:text-jampa-green transition duration-300">
+                GuaTuristicoJP
+            </a>
+            
+            
+          
+        </div>
+    </nav>
+    
+    <header id="inicio" class="hero-banner text-white py-16 md:py-24 shadow-xl">
+        <div class="container mx-auto px-4 text-center max-w-7xl">
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-4">
+                Sabores de João Pessoa
+            </h1>
+            <p class="text-xl sm:text-2xl font-light max-w-3xl mx-auto">
+                Uma jornada deliciosa entre o mar e o sertão. Prepare seu paladar para a capital mais oriental das Américas.
+            </p>
+        </div>
+    </header>
+
+    <div class="container mx-auto px-4 mt-8 mb-16 max-w-7xl">
+        
+        <div class="main-content-area rounded-xl shadow-lg p-6 md:p-10 lg:p-12">
+
+            <section class="py-6 border-b border-gray-200 mb-8">
+                <h2 class="text-3xl font-bold text-jampa-blue mb-4">
+                    O Cardápio Paraibano: Tradição e Frescor
+                </h2>
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    A culinária de João Pessoa é um verdadeiro abraço nordestino. De um lado, o frescor e a abundância dos frutos do mar colhidos no Atlântico; do outro, a força e a tradição dos ingredientes do interior, como a macaxeira e a carne de sol. Essa fusão cria pratos únicos que são obrigatórios para qualquer visitante.
+                </p>
+            </section>
+
+            <section id="pratos" class="py-6">
+                <h2 class="text-4xl font-extrabold text-gray-800 text-center mb-12 border-b border-jampa-green pb-4">
+                    Os Pratos que Você <span class="text-jampa-green">PRECISA</span> Experimentar
+                </h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                    <div class="bg-white border border-gray-100 rounded-xl shadow-xl overflow-hidden transition duration-300 hover:shadow-2xl hover:scale-[1.02]">
+                        <img src="imggastronomia/sopas.png"
+                            alt="Prato de peixe ou camarão fresco"
+                            class="w-full h-48 object-cover"
+                            onerror="this.onerror=null;this.src='https://placehold.co/600x400/1e40af/ffffff?text=Peixes+e+Frutos+do+Mar'">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-jampa-blue mb-3">
+                                1. Frescor do Mar: Peixes e Camarões
+                            </h3>
+                            <p class="text-gray-600 text-sm">
+                                A proximidade com o oceano garante ingredientes de altíssima qualidade. O peixe frito, o camarão ao alho e óleo e a Lagosta grelhada são imperdíveis. Procure pelos restaurantes na orla de Tambaú e Cabo Branco para a melhor vista e o sabor mais fresco.
+                            </p>
+                            <span class="inline-block mt-4 bg-jampa-green text-white text-xs font-semibold px-3 py-1 rounded-full">
+                                Dica: Tainha na Telha
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="bg-white border border-gray-100 rounded-xl shadow-xl overflow-hidden transition duration-300 hover:shadow-2xl hover:scale-[1.02]">
+                        <img src="imggastronomia/carnedesol.png"
+                            alt="Carne de sol com macaxeira e feijão verde"
+                            class="w-full h-48 object-cover"
+                            onerror="this.onerror=null;this.src='https://placehold.co/600x400/10b981/000000?text=Carne+de+Sol'">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-jampa-blue mb-3">
+                                2. O Sabor Forte do Sertão: Carne de Sol
+                            </h3>
+                            <p class="text-gray-600 text-sm">
+                                É o prato mais emblemático do Nordeste. Em Jampa, é servida geralmente na chapa, acompanhada de macaxeira (aipim/mandioca) frita na manteiga de garrafa, queijo coalho grelhado e um cremoso feijão verde. Um prato que conforta a alma.
+                            </p>
+                            <span class="inline-block mt-4 bg-jampa-green text-white text-xs font-semibold px-3 py-1 rounded-full">
+                                Acompanhamento Clássico
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="bg-white border border-gray-100 rounded-xl shadow-xl overflow-hidden transition duration-300 hover:shadow-2xl hover:scale-[1.02]">
+                        <img src="imggastronomia/cartola.png"
+                            alt="Sobremesa Cartola com banana, queijo e canela"
+                            class="w-full h-48 object-cover"
+                            onerror="this.onerror=null;this.src='https://placehold.co/600x400/f5f5dc/000000?text=Sobremesa+Cartola'">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-jampa-blue mb-3">
+                                3. A Rainha das Sobremesas: Cartola
+                            </h3>
+                            <p class="text-gray-600 text-sm">
+                                Não vá embora sem provar a Cartola! Essa sobremesa inusitada junta banana frita (da terra), queijo coalho grelhado, açúcar e canela. É doce, salgada, quente e cremosa, tudo ao mesmo tempo. Uma explosão de sabores nordestinos.
+                            </p>
+                            <span class="inline-block mt-4 bg-jampa-green text-white text-xs font-semibold px-3 py-1 rounded-full">
+                                Doce Salgado Perfeito
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            
+            <section id="onde-comer" class="py-10 border-t border-gray-200 mt-8">
+                <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">
+                    Onde Comer: Nossos Destaques
+                </h2>
+                <div class="space-y-8">
+                    
+                    <div class="flex flex-col lg:flex-row bg-gray-50 rounded-xl shadow-md p-6 items-center border border-jampa-blue/10">
+                        <div class="lg:w-2/5 w-full mb-4 lg:mb-0 lg:pr-6">
+                            <img src="imggastronomia/bar1.png"
+                                alt="Restaurante chique na orla de João Pessoa"
+                                class="rounded-lg shadow-md w-full h-auto"
+                                onerror="this.onerror=null;this.src='https://placehold.co/400x250/1e40af/ffffff?text=Vista+Chique'">
+                        </div>
+                        <div class="lg:w-3/5 w-full">
+                            <h3 class="text-2xl font-extrabold text-jampa-green mb-2">
+                                O Peixeiro Dourado (Ficcional)
+                            </h3>
+                            <p class="text-gray-700 text-base leading-relaxed">
+                                <span class="font-semibold text-jampa-blue">Experiência:</span> Jantar com vista para o mar em um ambiente sofisticado. Ideal para um momento especial. A especialidade é o polvo grelhado com risoto de coco.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col lg:flex-row-reverse bg-gray-50 rounded-xl shadow-md p-6 items-center border border-jampa-blue/10">
+                        <div class="lg:w-2/5 w-full mb-4 lg:mb-0 lg:pl-6">
+                            <img src="imggastronomia/macaxeirafazenda.png"
+                                alt="Interior de restaurante com decoração rústica"
+                                class="rounded-lg shadow-md w-full h-auto"
+                                onerror="this.onerror=null;this.src='https://placehold.co/400x250/10b981/000000?text=Interior+Rustico'">
+                        </div>
+                        <div class="lg:w-3/5 w-full">
+                            <h3 class="text-2xl font-extrabold text-jampa-green mb-2">
+                                Fazenda Macaxeira (Ficcional)
+                            </h3>
+                            <p class="text-gray-700 text-base leading-relaxed">
+                                <span class="font-semibold text-jampa-blue">Experiência:</span> O autêntico sabor nordestino, sem frescura. Famoso pelo café da manhã regional (cuscuz, queijo coalho, tapioca) e o rodízio de carne de sol no almoço.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            
+            <section id="petiscos" class="py-10 border-t border-gray-200 mt-8">
+                <h2 class="text-3xl font-bold text-jampa-blue mb-8 text-center">
+                    Petiscos e Refrescos
+                </h2>
+                <div class="md:flex md:space-x-10">
+                    <div class="md:w-1/2 mb-6 md:mb-0 bg-gray-50 p-6 rounded-xl shadow-inner border border-jampa-sand">
+                        <h3 class="text-2xl font-extrabold text-gray-800 mb-4 border-b border-jampa-green pb-2">
+                            Petiscos e Lanches Rápidos
+                        </h3>
+                        <ul class="space-y-3 list-none">
+                            <li class="p-2 border-b border-gray-100">
+                                <span class="font-semibold text-jampa-blue">01. Tapioca:</span> Versátil e deliciosa, recheada com queijo, coco, carne de sol ou doces. Perfeita para um lanche na praia.
+                            </li>
+                            <li class="p-2 border-b border-gray-100">
+                                <span class="font-semibold text-jampa-blue">02. Cuscuz:</span> Base da alimentação. Experimente o cuscuz molhado, acompanhado de ovos mexidos ou carne.
+                            </li>
+                            <li class="p-2">
+                                <span class="font-semibold text-jampa-blue">03. Açaí Nordestino:</span> Servido puro, sem a adição de xarope, em tigelas que você complementa com frutas e granola.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="md:w-1/2 bg-gray-50 p-6 rounded-xl shadow-inner border border-jampa-sand">
+                        <h3 class="text-2xl font-extrabold text-gray-800 mb-4 border-b border-jampa-green pb-2">
+                            Refrescos e Bebidas Típicas
+                        </h3>
+                        <ul class="space-y-3 list-none">
+                            <li class="p-2 border-b border-gray-100">
+                                <span class="font-semibold text-jampa-blue">01. Água de Coco:</span> Direto do coqueiro! Encontrada em toda a orla. A hidratação perfeita.
+                            </li>
+                            <li class="p-2 border-b border-gray-100">
+                                <span class="font-semibold text-jampa-blue">02. Caldo de Cana:</span> O famoso "garapa", espremido na hora com um toque de limão.
+                            </li>
+                            <li class="p-2">
+                                <span class="font-semibold text-jampa-blue">03. Cachaça Paraibana:</span> O estado é famoso por cachaças de alambique premiadas. Procure por marcas locais para degustação.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+    <footer class="bg-gray-800 text-white text-center py-6">
+        <div class="container mx-auto px-4 max-w-7xl">
+            <p class="text-sm">
+                &copy; 2024 Guia Turístico João Pessoa PB. Bom Apetite!
+            </p>
+        </div>
+    </footer>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700;900&display=swap">
+</body>
+</html>

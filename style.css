@@ -49,34 +49,76 @@ header nav ul {
     text-decoration: none;
 }
 
+body {
+    background-color: #fffbfbd5;
+}
+
 header {
     display: flex;
     justify-content: center;
 }
 
-.phrase {
+#phrase {
     text-align: center;
-    margin: 150px 0 ;
+    margin: 150px 0;
     font-size: 24px;
+    font-style: italic;
+    opacity: 90%;
 }
 
-.cards { 
+.cards {
     display: flex;
     justify-content: center;
     gap: 50px;
     padding: 40px 8px;
-    opacity: 80%;
 }
 
 .cards img {
     border-radius: 10px;
-    width: 350px;
+    width: 300px;
     height: 700px;
     object-fit: cover;
-
+    opacity: 95%;
 }
 
-.cards > div {
+.cards>div {
     text-align: center;
-    width: 330px;
+    width: 260px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+    opacity: 80%;
+}
+
+hr {
+    border: 1px solid #00000033;
+    margin-top: 100px;
+    width: 80%;
+    margin: auto;
+}
+
+h3 {
+    margin: 15px 0;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: Poppins, sans-serif;
+}
+
+p {
+    font-family: poppins, sans-serif;
+    display: block;
+    text-align: justify;
+    hyphens: auto;
+}
+
+footer {
+    display: flex;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+    color: #000000aa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    justify-content: center;
 }

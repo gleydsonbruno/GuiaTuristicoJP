@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospedagens - João Pessoa, PB</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        // Cores temáticas de João Pessoa
+                        'jampa-blue': '#1e40af', // Um azul profundo para o mar
+                        'jampa-green': '#10b981', // Um verde vibrante para a natureza
+                        'jampa-sand': '#f5f5dc', // Uma cor de areia/bege claro
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #f7f7f7;
+        }
+
+        .main-content-area {
+            background-color: #ffffff;
+        }
+
+        .hero-banner {
+            /* Gradiente de azul do mar para o verde do coqueiral */
+            background: linear-gradient(135deg, #1e40af 0%, #10b981 100%);
+        }
+
+        .sticky-nav {
+            z-index: 50;
+        }
+    </style>
+</head>
+
+<body class="font-sans">
+
+    <nav class="sticky top-0 bg-white border-b border-gray-200 shadow-md py-3 sticky-nav">
+        <div class="container mx-auto px-4 max-w-7xl flex justify-between items-center">
+            <a href="painel.php"
+                class="text-2xl font-black text-jampa-blue hover:text-jampa-green transition duration-300">
+                GuaTuristicoJP
+            </a>
+        </div>
+    </nav>
+
+    <header id="inicio" class="hero-banner text-white py-16 md:py-24 shadow-xl">
+        <div class="container mx-auto px-4 text-center max-w-7xl">
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-4">
+                Onde Ficar em João Pessoa
+            </h1>
+            <p class="text-xl sm:text-2xl font-light max-w-3xl mx-auto">
+                Encontre o refúgio perfeito entre hotéis luxuosos, pousadas aconchegantes e aluguéis por temporada.
+            </p>
+        </div>
+    </header>
+
+    <div class="container mx-auto px-4 mt-8 mb-16 max-w-7xl">
+
+        <div class="main-content-area rounded-xl shadow-lg p-6 md:p-10 lg:p-12">
+
+            <section class="py-6 border-b border-gray-200 mb-8">
+                <h2 class="text-3xl font-bold text-jampa-blue mb-4">
+                    As Melhores Áreas para Hospedagem
+                </h2>
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    A escolha ideal depende do seu estilo de viagem. A orla de Tambáu e Cabo Branco é central e
+                    movimentada.
+                    O Bessa oferece tranquilidade. Já a área de Manaíra é mais urbana, com shoppings e gastronomia
+                    variada.
+                </p>
+            </section>
+
+            <section id="categorias" class="py-6">
+                <h2 class="text-4xl font-extrabold text-gray-800 text-center mb-12 border-b border-jampa-green pb-4">
+                    Opções de Estadia para <span class="text-jampa-green">Todo Tipo</span> de Viajante
+                </h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                    <div
+                        class="bg-white border border-gray-100 rounded-xl shadow-xl overflow-hidden transition duration-300 hover:shadow-2xl hover:scale-[1.02]">
+                        <img src="imghospedagem/resort.png" alt="Hotel de frente para o mar em João Pessoa"
+                            class="w-full h-48 object-cover"
+                            onerror="this.onerror=null;this.src='https://placehold.co/600x400/1e40af/ffffff?text=Hotéis+na+Orla'">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-jampa-blue mb-3">
+                                1. Hotéis e Resorts
+                            </h3>
+                            <p class="text-gray-600 text-sm">
+                                Para quem busca serviços completos, piscinas com vista, e café da manhã incluso.
+                                Concentram-se majoritariamente nas avenidas principais de Tambaú e Cabo Branco.
+                            </p>
+                            <span
+                                class="inline-block mt-4 bg-jampa-green text-white text-xs font-semibold px-3 py-1 rounded-full">
+                                Recomendado: Famílias e Casais
+                            </span>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-white border border-gray-100 rounded-xl shadow-xl overflow-hidden transition duration-300 hover:shadow-2xl hover:scale-[1.02]">
+                        <img src="imghospedagem/hotel.png" alt="Fachada de pousada charmosa e colorida"
+                            class="w-full h-48 object-cover"
+                            onerror="this.onerror=null;this.src='https://placehold.co/600x400/10b981/000000?text=Pousadas+Aconchegantes'">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-jampa-blue mb-3">
+                                2. Pousadas
+                            </h3>
+                            <p class="text-gray-600 text-sm">
+                                Ideais para uma experiência mais pessoal e acolhedora, com decoração temática e
+                                atendimento direto dos donos.
+                                Boas opções no Bessa e em áreas próximas ao centro.
+                            </p>
+                            <span
+                                class="inline-block mt-4 bg-jampa-green text-white text-xs font-semibold px-3 py-1 rounded-full">
+                                Recomendado: Viagem a Dois
+                            </span>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-white border border-gray-100 rounded-xl shadow-xl overflow-hidden transition duration-300 hover:shadow-2xl hover:scale-[1.02]">
+                        <img src="imghospedagem/aluguel.png" alt="Interior de apartamento com vista para a praia"
+                            class="w-full h-48 object-cover"
+                            onerror="this.onerror=null;this.src='https://placehold.co/600x400/f5f5dc/000000?text=Apartamentos+de+Aluguel'">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-jampa-blue mb-3">
+                                3. Aluguel por Temporada
+                            </h3>
+                            <p class="text-gray-600 text-sm">
+                                Apartamentos e casas disponíveis para aluguel via plataformas.
+                                Oferecem cozinha própria e mais espaço. Excelente para grupos grandes ou estadias mais
+                                longas.
+                            </p>
+                            <span
+                                class="inline-block mt-4 bg-jampa-green text-white text-xs font-semibold px-3 py-1 rounded-full">
+                                Recomendado: Grupos e Longas Estadias
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section id="dicas" class="py-10 border-t border-gray-200 mt-8">
+                <h2 class="text-3xl font-bold text-jampa-blue mb-8 text-center">
+                    Dicas Essenciais para sua Reserva
+                </h2>
+                <div class="md:flex md:space-x-10">
+                    <div class="md:w-1/2 mb-6 md:mb-0 bg-gray-50 p-6 rounded-xl shadow-inner border border-jampa-sand">
+                        <h3 class="text-2xl font-extrabold text-gray-800 mb-4 border-b border-jampa-green pb-2">
+                            Localização Estratégica
+                        </h3>
+                        <ul class="space-y-3 list-none">
+                            <li class="p-2 border-b border-gray-100">
+                                <span class="font-semibold text-jampa-blue">Orla (Tambaú/Cabo Branco):</span> Ideal se
+                                você planeja fazer passeios de catamarã e curtir a vida noturna.
+                            </li>
+                            <li class="p-2 border-b border-gray-100">
+                                <span class="font-semibold text-jampa-blue">Praia do Bessa:</span> Para quem busca mais
+                                sossego e praias mais calmas, um pouco mais afastado do burburinho central.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="md:w-1/2 bg-gray-50 p-6 rounded-xl shadow-inner border border-jampa-sand">
+                        <h3 class="text-2xl font-extrabold text-gray-800 mb-4 border-b border-jampa-green pb-2">
+                            Quando Reservar
+                        </h3>
+                        <ul class="space-y-3 list-none">
+                            <li class="p-2 border-b border-gray-100">
+                                <span class="font-semibold text-jampa-blue">Alta Temporada (Dez - Mar):</span> Reserve
+                                com <span class="font-extrabold">pelo menos 4 meses</span> de antecedência,
+                                especialmente Carnaval e Reveillon.
+                            </li>
+                            <li class="p-2 border-b border-gray-100">
+                                <span class="font-semibold text-jampa-blue">Baixa Temporada (Mai - Set):</span> As
+                                melhores tarifas e mais opções de hospedagem.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+    <footer class="bg-gray-800 text-white text-center py-6">
+        <div class="container mx-auto px-4 max-w-7xl">
+            <p class="text-sm">
+                &copy; 2024 Guia Turístico João Pessoa PB. Encontre sua estadia!
+            </p>
+        </div>
+    </footer>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700;900&display=swap">
+
+</body>
+
+</html>

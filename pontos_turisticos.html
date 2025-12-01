@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pontos Turísticos - João Pessoa, PB</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'jampa-blue': '#1e40af',
+                        'jampa-green': '#10b981',
+                        'jampa-sand': '#f5f5dc',
+                        'jampa-accent': '#f97316',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-section {
+            background-image: url('imgpontos/fundjp.png');
+            background-size: cover;
+            background-position: center;
+            height: 50vh;
+            min-height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        .hero-overlay {
+            background-color: rgba(0, 0, 0, 0.4);
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+        .card-item:nth-child(even) .content-block {
+            order: 2;
+        }
+        .card-item:nth-child(even) .image-block {
+            order: 1;
+        }
+        .bg-gradient-item {
+             background: linear-gradient(90deg, #1e40af 0%, #10b981 100%);
+        }
+        .nav-link {
+            transition: color 0.3s, border-color 0.3s;
+        }
+        .bg-jampa-sea {
+            background-image: url('imgpontos/fundjp.png');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-jampa-sea font-sans">
+
+    <nav class="sticky top-0 bg-white border-b border-gray-200 shadow-md py-3 sticky-nav">
+        <div class="container mx-auto px-4 max-w-7xl flex justify-between items-center">
+            <a href="painel.php" class="text-2xl font-black text-jampa-blue hover:text-jampa-green transition duration-300">
+                GuaTuristicoJP
+            </a>
+        </div>
+    </nav>
+
+    <header class="hero-section text-white shadow-xl">
+        <div class="hero-overlay"></div>
+        <div class="container mx-auto px-4 text-center z-10 pt-16">
+            <h1 class="text-5xl sm:text-6xl lg:text-7xl font-extrabold mb-4 drop-shadow-lg">
+                Pontos Históricos e Naturais
+            </h1>
+            <p class="text-xl sm:text-2xl font-light max-w-3xl mx-auto mt-4 drop-shadow-md">
+                Onde o Brasil encontra o sol e a história se revela em cores vibrantes.
+            </p>
+        </div>
+    </header>
+
+    <section class="py-16 md:py-24 bg-jampa-sand/90">
+        <div class="container mx-auto px-4 max-w-7xl">
+            <h2 class="text-4xl font-extrabold text-jampa-blue text-center mb-12">
+                Experiências Únicas em João Pessoa
+            </h2>
+
+            <div class="space-y-20">
+
+                <div class="card-item flex flex-col md:flex-row bg-white rounded-xl shadow-2xl overflow-hidden transform hover:scale-[1.01] transition duration-500">
+                    <div class="md:w-1/2 p-6 content-block">
+                        <h3 class="text-3xl font-bold text-jampa-accent mb-3">1. Farol do Cabo Branco e Barreira</h3>
+                        <p class="text-gray-700 leading-relaxed mb-4">
+                            Este é o ponto mais oriental das Américas, onde o sol nasce primeiro no Brasil. A estrutura do farol, com seu formato triangular único (lembrando um sisal, planta típica), fica no topo da imponente Barreira do Cabo Branco, que oferece uma vista panorâmica de tirar o fôlego do Oceano Atlântico.
+                        </p>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-jampa-green mr-2" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg> Melhores fotos ao nascer do sol.</li>
+                            <li class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-jampa-green mr-2" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg> Próximo à Estação Cabo Branco.</li>
+                        </ul>
+                    </div>
+                    <div class="md:w-1/2 image-block">
+                        <img src="imgpontos/farol.png"
+                             alt="Vista do Farol do Cabo Branco ao amanhecer"
+                             class="w-full h-full object-cover min-h-[250px] md:min-h-0">
+                    </div>
+                </div>
+
+                <div class="card-item flex flex-col md:flex-row bg-white rounded-xl shadow-2xl overflow-hidden transform hover:scale-[1.01] transition duration-500">
+                    <div class="md:w-1/2 p-6 content-block">
+                        <h3 class="text-3xl font-bold text-jampa-accent mb-3">2. Centro Histórico e Conjunto de São Francisco</h3>
+                        <p class="text-gray-700 leading-relaxed mb-4">
+                            Caminhar pelo Centro Histórico é reviver a fundação da terceira cidade mais antiga do Brasil. O destaque é o Complexo de São Francisco, uma obra-prima da arquitetura barroca. A Torre sineira e o Convento de Santo Antônio são monumentos que impressionam pela riqueza de detalhes e história.
+                        </p>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-jampa-green mr-2" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg> Imperdível para amantes de arte e história.</li>
+                            <li class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-jampa-green mr-2" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg> Visitas guiadas disponíveis.</li>
+                        </ul>
+                    </div>
+                    <div class="md:w-1/2 image-block">
+                        <img src="imgpontos/image.png"
+                             alt="Complexo de São Francisco no Centro Histórico"
+                             class="w-full h-full object-cover min-h-[250px] md:min-h-0">
+                    </div>
+                </div>
+
+                <div class="card-item flex flex-col md:flex-row bg-white rounded-xl shadow-2xl overflow-hidden transform hover:scale-[1.01] transition duration-500">
+                    <div class="md:w-1/2 p-6 content-block">
+                        <h3 class="text-3xl font-bold text-jampa-accent mb-3">3. Pôr do Sol na Praia do Jacaré</h3>
+                        <p class="text-gray-700 leading-relaxed mb-4">
+                            Embora tecnicamente em Cabedelo, é um ritual obrigatório para quem visita Jampa. O espetáculo do sol se pondo no Rio Paraíba ao som inesquecível do Bolero de Ravel, tocado por Jurandy do Sax, atrai multidões diariamente. É um momento de pura emoção e beleza natural.
+                        </p>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-jampa-green mr-2" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg> Melhor pôr do sol do Nordeste.</li>
+                            <li class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-jampa-green mr-2" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg> Passeios de catamarã disponíveis no local.</li>
+                        </ul>
+                    </div>
+                    <div class="md:w-1/2 image-block">
+                        <img src="imgpontos/jacare.png"
+                             alt="Pôr do Sol com catamarãs na Praia do Jacaré"
+                             class="w-full h-full object-cover min-h-[250px] md:min-h-0">
+                    </div>
+                </div>
+
+                <div class="card-item flex flex-col md:flex-row bg-white rounded-xl shadow-2xl overflow-hidden transform hover:scale-[1.01] transition duration-500">
+                    <div class="md:w-1/2 p-6 content-block">
+                        <h3 class="text-3xl font-bold text-jampa-accent mb-3">4. Estação Cabo Branco - Ciência Cultura e Artes</h3>
+                        <p class="text-gray-700 leading-relaxed mb-4">
+                            Projetada pelo renomado arquiteto Oscar Niemeyer, a Estação é um complexo cultural e científico com linhas curvas e modernas. É um ótimo lugar para visitar exposições, ver o artesanato local e desfrutar de uma vista privilegiada da cidade e do oceano. Fica perto do Farol.
+                        </p>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-jampa-green mr-2" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg> Arquitetura moderna de Niemeyer.</li>
+                            <li class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-jampa-green mr-2" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg> Entrada geralmente gratuita.</li>
+                        </ul>
+                    </div>
+                    <div class="md:w-1/2 image-block">
+                        <img src="imgpontos/imageciencias.png"
+                             alt="Estação Cabo Branco com design moderno"
+                             class="w-full h-full object-cover min-h-[250px] md:min-h-0">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-12 md:py-20 bg-jampa-blue/90 text-white">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <h3 class="text-3xl font-extrabold mb-4 border-b border-jampa-green pb-2">
+                Dicas de Planejamento de Roteiro
+            </h3>
+            <ul class="space-y-3 list-disc pl-5 text-lg">
+                <li>
+                    <span class="font-semibold">Dia 1 (Leste):</span> Farol do Cabo Branco (manhã) + Estação Cabo Branco (tarde) + Praias de Cabo Branco e Tambaú.
+                </li>
+                <li>
+                    <span class="font-semibold">Dia 2 (História):</span> Centro Histórico (manhã) + Mercado de Artesanato Paraibano (tarde).
+                </li>
+                <li>
+                    <span class="font-semibold">Final de Tarde:</span> Reserve uma tarde para ir ao Jacaré e vivenciar o pôr do sol.
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white text-center py-6">
+        <p class="text-sm">
+            &copy; 2024 Guia Turístico João Pessoa PB. Descubra Cada Canto.
+        </p>
+    </footer>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700;900&display=swap">
+    
+
+</body>
+</html>

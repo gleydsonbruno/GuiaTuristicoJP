@@ -56,3 +56,10 @@ a:link, a:visited {
 a:hover {
     color: #9E9E9E ;
 }
+
+.preencher-campo {
+    color: red;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    right: 20%;
+}
