@@ -20,35 +20,6 @@ Um sistema web simples desenvolvido como projeto base para a disciplina de Desen
 
 -----
 
-
-## 📂 Estrutura do Projeto
-
-A organização dos diretórios e arquivos foi planejada para separar os diferentes tipos de recursos do guia.
-
-```
-GuiaTuristicoJP/
-├── images/               # Pasta de imagens genéricas
-├── imggastronomia/       # Imagens para a seção de Gastronomia
-├── imghospedagem/        # Imagens para a seção de Hospedagem
-├── imgpontos/            # Imagens para a seção de Pontos Turísticos
-├── imgpraias/            # Imagens para a seção de Praias
-├── conexao.php           # Configuração de conexão com o Banco de Dados (DB)
-├── index.php             # Página de login
-├── gastronomia.html      # Página dedicada à Gastronomia
-├── hospedagem.html       # Página dedicada à Hospedagem
-├── pontos_turisticos.html# Página dedicada aos Pontos Turísticos
-├── praias.html           # Página dedicada às Praias
-├── painel.php            # Página principal do site (home)
-├── protect.php           # Lógica PHP para proteger páginas restritas
-├── register.php          # Formulário de registro de novos usuários
-├── logout.php            # Lógica para finalizar a sessão do usuário
-├── scripts.js            # Arquivo principal de scripts JavaScript
-├── style.css             # Estilos CSS gerais do projeto
-└── style_login.css       # Estilos CSS específicos para as telas de login/registro
-```
-
------
-
 ## 🛠️ Instalação e Configuração
 
 Para executar o projeto localmente, você precisará de um ambiente de desenvolvimento que suporte PHP e MySQL.
