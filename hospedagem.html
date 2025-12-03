@@ -11,10 +11,9 @@
             theme: {
                 extend: {
                     colors: {
-                        // Cores temáticas de João Pessoa
-                        'jampa-blue': '#1e40af', // Um azul profundo para o mar
-                        'jampa-green': '#10b981', // Um verde vibrante para a natureza
-                        'jampa-sand': '#f5f5dc', // Uma cor de areia/bege claro
+                        'jampa-blue': '#1e40af',
+                        'jampa-green': '#10b981', 
+                        'jampa-sand': '#f5f5dc', 
                     },
                     fontFamily: {
                         sans: ['Inter', 'sans-serif'],
@@ -33,7 +32,6 @@
         }
 
         .hero-banner {
-            /* Gradiente de azul do mar para o verde do coqueiral */
             background: linear-gradient(135deg, #1e40af 0%, #10b981 100%);
         }
 
@@ -45,12 +43,35 @@
 
 <body class="font-sans">
 
-    <nav class="sticky top-0 bg-white border-b border-gray-200 shadow-md py-3 sticky-nav">
-        <div class="container mx-auto px-4 max-w-7xl flex justify-between items-center">
-            <a href="painel.php"
-                class="text-2xl font-black text-jampa-blue hover:text-jampa-green transition duration-300">
-                GuaTuristicoJP
+    <nav class="sticky top-0 bg-white shadow-md z-50">
+        <div class="container mx-auto px-4 max-w-7xl flex justify-between items-center py-4">
+
+            <a href="painel.php" class="flex items-center space-x-2">
+                <img src="images/logotip.png" alt="Logo GuiaTuristicoJP" class="h-10 w-auto">
+                <span class="text-3xl font-extrabold text-jampa-blue hover:text-jampa-green transition duration-300">
+                    GuiaTuristicoJP
+                </span>
             </a>
+
+            <div class="hidden md:block">
+                <ul class="flex space-x-6 font-semibold">
+                    <li><a href="painel.php"
+                            class="text-gray-600 hover:text-jampa-green transition duration-200">Início</a></li>
+                    <li><a href="pontos_turisticos.html"
+                            class="text-gray-600 hover:text-jampa-green transition duration-200">Pontos Turísticos</a>
+                    </li>
+                    <li><a href="hospedagem.html"
+                            class="text-jampa-blue border-b-2 border-jampa-blue pb-1 font-bold transition duration-200">Hospedagem</a></li>
+                    <li><a href="praias.html"
+                            class="text-gray-600 hover:text-jampa-green transition duration-200">Praias</a>
+                    </li>
+                    <li><a href="gastronomia.html"
+                            class="text-gray-600 hover:text-jampa-green transition duration-200">Gastronomia</a></li>
+                    <li><a href="logout.php"
+                            class="bg-jampa-blue text-white px-4 py-2 rounded-full hover:bg-jampa-green transition duration-300">Sair</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
